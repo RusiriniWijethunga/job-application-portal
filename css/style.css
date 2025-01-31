@@ -1,4 +1,4 @@
-/********** Template CSS **********/
+
 :root {
     --primary: #00B074;
     --secondary: #2B9BFF;
@@ -15,7 +15,7 @@
 }
 
 
-/*** Spinner ***/
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -186,14 +186,13 @@
     align-items: center;
     justify-content: center;
     color: #FFFFFF !important;
-    background: none !important; /* Ensure no background */
-    border: none !important; /* Ensure no border */
-    box-shadow: none !important; /* Remove any shadow */
+    background: none !important; 
+    border: none !important; 
+    box-shadow: none !important; 
     font-size: 22px;
     transition: .5s;
 }
 
-/* Prevent hover effects from applying any background or border */
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
     background: none !important;
@@ -201,7 +200,7 @@
     box-shadow: none !important;
 }
 
-/* Prevent focus outline */
+
 .header-carousel .owl-nav .owl-prev:focus,
 .header-carousel .owl-nav .owl-next:focus {
     outline: none !important;
@@ -209,7 +208,7 @@
     box-shadow: none !important;
 }
 
-/* Target any internal elements just in case */
+
 .header-carousel .owl-nav .owl-prev *,
 .header-carousel .owl-nav .owl-next * {
     background: none !important;
@@ -227,7 +226,7 @@
     flex-direction: column;
 }
 
-/* Fix: Remove green background and border */
+
 .header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
     margin: 7px 0;
@@ -237,20 +236,19 @@
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    background: transparent !important;  /* Ensure no unwanted background */
-    border: none !important;  /* Remove border */
+    background: transparent !important;  
+    border: none !important;  
     font-size: 22px;
     transition: .5s;
 }
 
-/* Fix: Prevent hover effect from adding color */
+
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
     background: transparent !important;
     border: none !important;
 }
 
-/* Fix: Remove outline effect */
 .header-carousel .owl-nav .owl-prev:focus,
 .header-carousel .owl-nav .owl-next:focus {
     outline: none !important;
@@ -267,7 +265,7 @@
 }
 
 
-/*** About ***/
+
 .about-bg {
     background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
     background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
@@ -278,7 +276,6 @@
 }
 
 
-/*** Category ***/
 .cat-item {
     display: block;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
@@ -292,7 +289,6 @@
 }
 
 
-/*** Job Listing ***/
 .nav-pills .nav-item .active {
     border-bottom: 2px solid var(--primary);
 }
@@ -310,7 +306,7 @@
 }
 
 
-/*** Testimonial ***/
+
 .testimonial-carousel .owl-item .testimonial-item,
 .testimonial-carousel .owl-item.center .testimonial-item * {
     transition: .5s;
@@ -348,7 +344,7 @@
 }
 
 
-/*** Footer ***/
+
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
