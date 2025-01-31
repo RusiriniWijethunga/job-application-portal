@@ -114,7 +114,7 @@
                             <option selected>Work Option</option>
                             <option value="1">Hybrid</option>
                             <option value="2">Remote</option>
-                            <option value="3">Full time</option>
+                            <option value="3"> Onsite</option>
                         </select>
                     </div>
                     <div class="col-md-4">
@@ -136,38 +136,44 @@
 <!-- Search End -->
 
         <!-- Jobs Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Job Listing</h1>
-                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
-                        <li class="nav-item">
-                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
-                                <h6 class="mt-n1 mb-0">Onsite</h6>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
-                                <h6 class="mt-n1 mb-0">Remote</h6>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
-                                <h6 class="mt-n1 mb-0">Hybrid</h6>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-
-                            <div id="jobListings">
-                                <!-- Job listings will be dynamically populated here -->
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+<div class="container-xxl py-5">
+    <div class="container">
+        <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s" id="jobListingsTitle">Job Listing</h1>
+        <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
+            <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                <li class="nav-item">
+                    <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                        <h6 class="mt-n1 mb-0">Hybrid</h6>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                        <h6 class="mt-n1 mb-0">Onsite</h6>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                        <h6 class="mt-n1 mb-0">Remote</h6>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div id="jobListings">
+                        <!-- Job listings will be dynamically populated here -->
+                        <div class="row g-4">
+                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                <!-- Add your job listing content here -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Jobs End -->
+    </div>
+</div>
+<!-- Jobs End -->
+
 
         <!-- Category Start -->
         <div id="explore-by-category" class="container-xxl py-5"> <!-- Added ID here -->
@@ -271,11 +277,13 @@
         <!-- JavaScript for Filtering Jobs -->
         <script>
             const jobs = [
-                { title: "Software Engineer", location: "Kerala, India", type: "Full Time", salary: "$123 - $456", date: "01 Jan, 2045" },
-                { title: "Marketing Manager", location: "New York, USA", type: "Full Time", salary: "$123 - $456", date: "01 Jan, 2045" },
-                { title: "Product Designer", location: "Colombo, Sri Lanka", type: "Full Time", salary: "$123 - $456", date: "01 Jan, 2045" },
-                { title: "Creative Director", location: "New York, USA", type: "Full Time", salary: "$123 - $456", date: "01 Jan, 2045" },
-                { title: "Wordpress Developer", location: "Gothemburg, Germany", type: "Full Time", salary: "$123 - $456", date: "01 Jan, 2045" }
+                { title: "Software Engineer", location: "Kerala, India", type: "Remote", salary: "$123 - $456", date: "05 Jan, 2025" },
+                { title: "Marketing Manager", location: "New York, USA", type: "Onsite", salary: "$123 - $456", date: "02 Jan, 2025" },
+                { title: "Product Designer", location: "Colombo, Sri Lanka", type: "Remote", salary: "$123 - $456", date: "01 Jan, 2025" },
+                { title: "Creative Director", location: "New York, USA", type: "Onlite", salary: "$123 - $456", date: "03 Jan, 2025" },
+                { title: "Wordpress Developer", location: "Gothemburg, Germany", type: "Hybrid", salary: "$123 - $456", date: "22 Jan, 2025" },
+                { title: "Wordpress Developer", location: "Chennai, India", type: "Remote", salary: "$123 - $456", date: "01 Jan, 2025" },
+                { title: "UI/UX Designer", location: "Negombo, Western province", type: "Onsite", salary: "$123 - $456", date: "01= Jan, 2025" }
             ];
 
             function renderJobs(filteredJobs) {
